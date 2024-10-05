@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _2
+{
+    internal class Program
+    {
+
+        static void Main()
+        {
+            Console.Write("num1 = ");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.Write("num2 = ");
+            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("+ or - ? ");
+            string cho = Console.ReadLine();
+            if (cho == "+")
+            {
+                sum(num1, num2);
+            }
+            else if (cho == "-")
+            {
+                min(num1,num2);
+            }
+
+        }
+        static void sum(int n1, int n2)
+        {
+            Console.WriteLine(n1 + n2);
+        }
+        static void min(int n1, int n2)
+        {
+            Console.WriteLine(n1 - n2);
+
+        }
+    }
+}
